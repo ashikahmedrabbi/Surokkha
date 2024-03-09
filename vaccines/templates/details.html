@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+       
+        <div class="col-6  card border-info m-5>
+            <div class="m-5 ">
+                <img src="{{vaccines.image.url}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Name : {{vaccines.name}}</h5>
+                        <p class="card-text">{{vaccines.description}}</p>
+                        <h6 class="card-text">Price :${{vaccines.price}}</h6>
+                        <h6 class="card-text">Doctor :{{vaccines.doctor}}</h6>
+                        <h6 class="card-text btn btn-warning">Available Date:{{vaccines.available_date}}</h6>
+                        <a href="{% url 'borrow' id=vaccines.id %} " class="btn btn-primary">Book Vaccine</a>
+
+                </div>
+            </div>
+        </div>
+       
+   
+        <div class="card m-2">
+            <h5 class="p-3">Total Comments : {{reviews | length}}</h5>
+            {% for comment in reviews %}
+          <div class="card-body border m-2">
+                <p><b>{{comment.name}}</b> </p>
+                <p>{{comment.comment}}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% if has_borrowed %}
+    <div class="card m-2">
+        <div class="card-body">
+            <form method="post">
+                <h1>Enter Your Reviews</h1>
+                {% csrf_token %}
+                {{ reviews_form | crispy }}
+                <button class="btn btn-warning">Submit</button>
+            </form>
+        </div>
+    </div>
+{% else %}
+    <h3 class="text-center m-3">You need to Book  the Vaccine before leaving a review.</h3>
+{% endif %}
+
+{% endblock %}

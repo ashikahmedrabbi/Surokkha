@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% load static %}
+<div class=" flex-wrap   p-5 background">
+    <div class="col-10 p-3">
+     
+        <div class="d-flex flex-wrap pt-5 h-100">
+            {% for vac in data %}
+            <div class="col-sm-3 ">
+                <div class="card m-2">
+
+                    <img src="{{vac.image.url}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">{{vac.name}}</h5>
+                        <p class="card-text">{{vac.description}}</p>
+                        <h6 class="card-text">Doctor :{{vac.doctor}}</h6>
+                        <button class="btn btn-success"><h6 class="card-text">Date :{{vac.available_date}}</h6></button>
+                        <h6 class="card-text">Price :{{vac.price}}</h6>
+
+                        {% if user.account.userRole == 'Doctor' %}
+                        <a href="{% url 'edit_vaccines' vac.id %}" class="btn btn-primary">Edit</a>
+                        <a href="{% url 'delete_vaccines' vac.id %}" class="btn btn-danger">Delete</a>
+                        {% else %}
+                        <a href="{% url 'vaccines' %}" class="btn btn-primary">Book Now</a>
+                        {% endif %}
+   
+                    </div>
+
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    
+</div>
+
+
+
+
+
+
+{% endblock %}

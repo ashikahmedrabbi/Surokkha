@@ -1,0 +1,33 @@
+{%extends 'base.html'%}
+
+{% block content %}
+
+
+{%load crispy_forms_tags%}
+{% if messages %}
+{% for m in messages %}
+<h1 {% if m.tags %} class="{{m.tags}} text-center" {% endif %}>{{m}}</h1>
+{% endfor %}
+{% endif %}
+<form method='post' style="width: 50%; margin: auto" novalidate>
+  <h1 style="text-align: center;">Your Profile Information Here</h1>
+  {% csrf_token %}
+  <!-- {{form | crispy }} -->
+  {% for field in form %}
+  <!-- <div class="form-group"> -->
+  {{field.label_tag}}
+  {{field}}
+  {{field.errors | striptags}}
+  <!-- </div> -->
+  {% endfor %}
+
+  <button class="btn btn-primary mt-2" type="submit">Update Information</button>
+
+</form>
+
+
+
+
+
+
+{% endblock %}
