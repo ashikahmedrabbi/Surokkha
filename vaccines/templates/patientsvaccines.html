@@ -17,9 +17,12 @@
                         <button class="btn btn-success"><h6 class="card-text">Available Date :{{vac.available_date}}</h6></button>
                         <h6 class="card-text">Price :{{vac.price}}</h6>
 
-                       
+                       {% if user.is_authenticated %}
                         
                         <a href="{% url 'details' vac.id %}" class="btn btn-primary">Details View</a>
+                        {% else %}
+                        <a href="{% url 'login' %}" class="btn btn-primary">Details View</a>
+                        {% endif %}
                     </div>
                 </div>
             </div>
