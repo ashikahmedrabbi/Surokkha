@@ -21,7 +21,7 @@
         <h1 {% if m.tags %} class="{{m.tags}} text-center" {% endif %}>{{m}}</h1>
       {% endfor %}
     {% endif %}
-    <form method='post' style="width: 50%; margin: auto" novalidate >
+    <form method='post' style="width: 50%; margin: auto; padding: 10px;" novalidate >
         <h1 style="text-align: center;" >Registration Form</h1>
         {% csrf_token %}
         <!-- {{form | crispy }} -->
