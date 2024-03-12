@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-['https://surokkha.onrender.com','https://*.127.0.0.1']
+CSRF_TRUSTED_ORIGINS =['https://surokkha.onrender.com','https://*.127.0.0.1']
 # Application definition
 
 INSTALLED_APPS = [
