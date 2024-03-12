@@ -14,14 +14,15 @@
                         <h5 class="card-title">{{vac.name}}</h5>
                         <p class="card-text">{{vac.description | truncatewords:10}}</p>
                         <h6 class="card-text">Doctor :{{vac.doctor}}</h6>
-                        <button class="btn btn-success"><h6 class="card-text">Available Date :{{vac.available_date}}</h6></button>
+                        <button class="btn btn-outline-danger"><h6 class="card-text">Available Date :{{vac.available_date}}</h6></button>
                         <h6 class="card-text">Price :{{vac.price}}</h6>
 
                        {% if user.is_authenticated %}
                         
-                        <a href="{% url 'details' vac.id %}" class="btn btn-outline-seccess">Details View</a>
+                        <a href="{% url 'details' vac.id %}" 
+                        class="btn btn-outline-secondary">Details View</a>
                         {% else %}
-                        <a href="{% url 'login' %}" class="btn btn-outline-seccess">Details View</a>
+                        <a href="{% url 'login' %}" class="btn btn-outline-secondary">Details View</a>
                         {% endif %}
                     </div>
                 </div>
