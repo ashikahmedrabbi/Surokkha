@@ -3,201 +3,337 @@
 
 {% load static %}
 
-<div class="d-flex flex-wrap p-5  align-items-center background" >
+<div class="d-flex flex-wrap p-5  align-items-center background">
 
 
-    <div class="col-6">
-        <h1 style="color: #303030;">Vaccines save lives</h1>
+  <div class="col-6" style="padding-left: 50px;">
+    <h1 style="color: #303030;">Vaccines save lives</h1>
 
-        <h2 style="color: #303030;">Fear endangers them.</h2>
+    <h2 style="color: #303030;">Fear endangers them.</h2>
 
-        <p style="color: #303030;"> It's a simple message parents need to keep hearing.</p>
-        <a href="{% url 'registration' %}" class="btn btn-outline-primary">Registration Now</a>
+    <p style="color: #303030;"> Vaccines, the guardians of health's embrace,
+      Shielding lives from illness' relentless chase.
+      Fear's icy grip, let it not sway,
+      For safety and wellness, vaccines pave the way.
+      In the dance of life, let vaccines lead the ballet.</p>
+    <a href="{% url 'registration' %}" class="btn btn-outline-primary">Registration Now</a>
 
 
-    </div>
+  </div>
 
-    <div class="col-6">
-        <img src="{% static '1.png' %}" />
-    </div>
+  <div class="col-6">
+    <img src="{% static '1.png' %}" />
+  </div>
 </div>
 
-<section class="section-padding section-bg" id="section_2" " style="background-color: #ECFBFA;" >
-    <div class="container">
-        <div class="row">
+<section class="section-padding section-bg" id="section_2" " style=" background-color: #ECFBFA;">
+  <div class="container">
+    <div class="row">
 
-            <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                <img src="static/group-people-volunteering-foodbank-poor-people.jpg" class="custom-text-box-image " style="width: 100%;height: 100%;">
-            </div>
+      <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+        <img src="static/group-people-volunteering-foodbank-poor-people.jpg" class="custom-text-box-image "
+          style="width: 100%;height: 100%;">
+      </div>
 
-            <div class="col-lg-6 col-12">
-                <div class="custom-text-box">
-                    <h2 class="mb-2">Our Story</h2>
+      <div class="col-lg-6 col-12">
+        <div class="custom-text-box">
+          <h2 class="mb-2">Our Story</h2>
 
-                    <h5 class="mb-3">SUROKKHA</h5>
+          <h5 class="mb-3">SUROKKHA</h5>
 
-                    <p class="mb-0">This is a Bootstrap 5.2.2 CSS template for charity organization websites. You can feel free to use it. Please tell your friends about TemplateMo website. Thank you. HTML CSS files updated on 20 Oct 2022.</p>
-                </div>
-                
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="custom-text-box mb-lg-0">
-                            <h5 class="mb-3">Our Mission</h5>
-
-                            <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
-
-                            <ul class="custom-list mt-2">
-                                <li class="custom-list-item d-flex">
-                                    <i class="bi-check custom-text-box-icon me-2"></i>
-                                    Charity Theme
-                                </li>
-
-                                <li class="custom-list-item d-flex">
-                                    <i class="bi-check custom-text-box-icon me-2"></i>
-                                    Semantic HTML
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-12">
-                        <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">
-                            <div class="counter-thumb"> 
-                                <div class="d-flex">
-                                    <span class="counter-number" data-from="1" data-to="2009" data-speed="1000"></span>
-                                    <span class="counter-number-text"></span>
-                                </div>
-
-                                <span class="counter-text">2009 Founded</span>
-                            </div> 
-
-                            <div class="counter-thumb mt-4"> 
-                                <div class="d-flex">
-                                    <span class="counter-number" data-from="1" data-to="120" data-speed="1000"></span>
-                                    <span class="counter-number-text">120 B</span>
-                                </div>
-
-                                <span class="counter-text">Donations</span>
-                            </div> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          <p class="mb-0">World began the administration of COVID-19 vaccines on 27 January 2021 while mass vaccination
+            started on 7 February 2021. The Oxford–AstraZeneca vaccine was the only COVID-19 vaccine authorized for
+            emergency use from January to April 2021.</p>
         </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="custom-text-box mb-lg-0">
+              <h5 class="mb-3">Our Mission</h5>
+
+              <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p>
+
+              <ul class="custom-list mt-2">
+                <li class="custom-list-item d-flex">
+                  <i class="bi-check custom-text-box-icon me-2"></i>
+                  Charity Theme
+                </li>
+
+                <li class="custom-list-item d-flex">
+                  <i class="bi-check custom-text-box-icon me-2"></i>
+                  Semantic HTML
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">
+              <div class="counter-thumb">
+                <div class="d-flex">
+                  <span class="counter-number" data-from="1" data-to="2009" data-speed="1000"></span>
+                  <span class="counter-number-text"></span>
+                </div>
+
+                <span class="counter-text">2009 Founded</span>
+              </div>
+
+              <div class="counter-thumb mt-4">
+                <div class="d-flex">
+                  <span class="counter-number" data-from="1" data-to="120" data-speed="1000"></span>
+                  <span class="counter-number-text">120 B</span>
+                </div>
+
+                <span class="counter-text">Donations</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
 </section>
 
 
 <section>
-    <div class="d-flex justify-content-center align-items-center  ">
+  <div class="d-flex justify-content-center align-items-center  ">
 
-      <div class="d-flex mr-5">
+    <div class="d-flex mr-5">
 
-        <div class="d-flex flex-column">
-          <div class="mt-3 pt-1 mx-2">
+      <div class="d-flex flex-column">
+        <div class="mt-3 pt-1 mx-2">
 
-            <div class="card ">
+          <div class="card ">
             <img src="{% static '4.jpg' %}" class="card-img-top" alt="...">
             <div class="card-body">
-             
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. </p>
+
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. </p>
             </div>
           </div>
-  
+
         </div>
 
         <div class="mt-3 mx-2">
 
           <div class="card ">
-          <img src="{% static 'mmr-vaccine-universal.jpg' %}" class="card-img-top " alt="..." >
-          <div class="card-body">
-           
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          </div>
-        </div>
-
-      </div>
-        </div>
-
-        <div class="d-flex flex-column">
-          <div class="mt-5 pt-5 mx-2">
-
-            <div class="card ">
-            <img src="{% static '2.jpg' %}" class="card-img-top" alt="...">
+            <img src="{% static 'mmr-vaccine-universal.jpg' %}" class="card-img-top " alt="...">
             <div class="card-body">
-             
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
             </div>
           </div>
-  
-        </div>
 
-        <div class="mt-3  mx-2">
+        </div>
+      </div>
+
+      <div class="d-flex flex-column">
+        <div class="mt-5 pt-5 mx-2">
 
           <div class="card ">
-          <img src="{% static '1.jpg' %}" class="card-img-top" alt="...">
-          <div class="card-body">
-           
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <img src="{% static '2.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="mt-3  mx-2 ">
+
+          <div class="card m-2">
+            <img src="{% static '1.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="ms-5 ps-3">
+      <div>
+        <h1 class="text-5xl font-bold">Great , Freshly <br> Presented</h1>
+        <p class="pt-7 pb-7">The meaning of gong cha is chanese is to provide the best tea to emperor from
+          all
+          possessions .
+          It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been
+          deeply appreciated by its custoers because of good words of mouth and unique customized service
+          orginated from Taiwan.</p>
+
+        <h4 class="font-bold">Best Quality</h4>
+        <p class="pt-1 pb-4">A Unique and different style from other teapots gives a luxurious and
+          minimalist
+          impression</p>
+        <h4 class="font-bold">Premium Quality</h4>
+        <p class="pt-2 pb-2">Premium Quality that makes tea more elegant and more durable when you use it.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+
+
+  <div class="text-center mx-auto mt-5 ">
+    <h1 class="" style="color: #5a6f80;">Our Doctors</h1>
+    <p class="pt-2 mb-5">In the bustling city of Surokkha, where the pulse of life beat with the rhythm of its people,
+      there existed a place of healing known as the Sanctuary of Serenity. <br>Within its hallowed halls, a group of
+      exceptional individuals dedicated their lives to the noble art of medicine.
+    </p>
+  </div>
+
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 m-5 text-center">
+    {% for doctor in doctors %}
+    <div class="col">
+      <div class="card h-100">
+        <img src="{{ doctor.image.url }}" class="card-img-top" alt="..."
+          style=" align-items: center; border-radius: 25%;">
+        <div class="card-body">
+          <h5 class="card-title">Name: {{ doctor.user.first_name }}</h5>
+          <p class="card-text">Specialization: {{ doctor.specialization }}</p>
+          <h6 class="card-text">Experience: {{ doctor.experience }} years</h6>
+          
+
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+
+<!-- Testimonial 3 - Bootstrap Brain Component -->
+<section class=" py-5 py-xl-8">
+  <div class="container">
+    <div class="row justify-content-md-center">
+      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+        <h1 class="fs-6 text-secondary mb-2 text-uppercase text-center">Happy Customers</h1>
+        <p class="display-5 mb-4 mb-md-5 text-center">We deliver what we promise. See what clients are expressing about us.</p>
+        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+      </div>
+    </div>
+  </div>
+
+  <div class="container overflow-hidden">
+    <div class="row gy-4 gy-md-0 gx-xxl-5">
+      <div class="col-12 col-md-4">
+        <div class="card border-0 border-bottom border-primary shadow-sm">
+          <div class="card-body p-4 p-xxl-5">
+            
+                <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                <blockquote class="bsb-blockquote-icon mb-4">We were so impressed with the work they did for us. They were able to take our vision and turn it into a reality, and they did it all on time and within budget. We would highly recommend them to anyone looking for a reliable partner.</blockquote>
+                <h4 class="mb-2">Luna John</h4>
+                
           </div>
         </div>
-
       </div>
+      <div class="col-12 col-md-4">
+        <div class="card border-0 border-bottom border-primary shadow-sm">
+          <div class="card-body p-4 p-xxl-5">
+            
+                <div class="bsb-ratings text-warning mb-3" data-bsb-star="4" data-bsb-star-off="1"></div>
+                <blockquote class="bsb-blockquote-icon mb-4">We were looking for a company that could help us develop a new website that was both visually appealing and user-friendly. We are so happy with the results, and we would highly recommend them to anyone looking for a new website.</blockquote>
+                <h4 class="mb-2">Mark Smith</h4>
+               
+              
+          </div>
         </div>
-        
       </div>
-
-      <div class="ms-5 ps-3">
-        <div>
-          <h1 class="text-5xl font-bold">Great , Freshly <br> Presented</h1>
-          <p class="pt-7 pb-7">The meaning of gong cha is chanese is to provide the best tea to emperor from
-              all
-              possessions .
-              It represents the highest quality and self expectation. Establishing in 2006, Gong cha had been
-              deeply appreciated by its custoers because of good words of mouth and unique customized service
-              orginated from Taiwan.</p>
-
-          <h4 class="font-bold">Best Quality</h4>
-          <p class="pt-1 pb-4">A Unique and different style from other teapots gives a luxurious and
-              minimalist
-              impression</p>
-          <h4 class="font-bold">Premium Quality</h4>
-          <p class="pt-2 pb-2">Premium Quality that makes tea more elegant and more durable when you use it.
-          </p>
+      <div class="col-12 col-md-4">
+        <div class="card border-0 border-bottom border-primary shadow-sm">
+          <div class="card-body p-4 p-xxl-5">
+            
+                <div class="bsb-ratings text-warning mb-3" data-bsb-star="5" data-bsb-star-off="0"></div>
+                <blockquote class="bsb-blockquote-icon mb-4">We were looking for a company that could help us with our branding. We needed a website and marketing materials. They were able to create a brand identity that we loved. They worked with us to develop a logo that represented our company.</blockquote>
+                <h4 class="mb-2">Luke Reeves</h4>
+               
+          </div>
+        </div>
       </div>
-      </div>
-
     </div>
-  </section>
+  </div>
+</section>
 
-  <section>
 
-      
-    <div class="text-center mx-auto mt-5 ">
-      <h1 class="fw-bold">Our Doctors</h1>
-      <p class="pt-2 mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have <br>
-        suffered alteration in some form, by injected humour.</p>
-    </div>
-    <div class="row row-cols-1 row-cols-md-3 g-4 mx-md-5 px-md-5 mb-5 pb-3">
-        {% for doctor in doctors %}
-            <div class="col">
-                <div class="card text-center " style="background-color:#ECFBFA ;">
-                    <img src="{{ doctor.image.url }}" class="card-img-top w-50 mx-auto mt-5" alt="..." style="border-radius: 50%;">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bolder">Name:{{ doctor.user.first_name }}</h5>
-                        <p class="card-text">Specialization:{{ doctor.specialization }}</p>
-                        <p class="card-text">Experience:{{ doctor.experience }}</p>
-                       
-                    </div>
+<!-- FAQ 1 - Bootstrap Brain Component -->
+<section class=" py-3 py-md-5">
+  <div class="container">
+    <div class="row gy-5 gy-lg-0 align-items-lg-center">
+      <div class="col-12 col-lg-6">
+        <img class="img-fluid rounded" loading="lazy" src="{%static  'faq-img.png'%}" alt="How can we help you?">
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="row justify-content-xl-end">
+          <div class="col-12 col-xl-11">
+            <h2 class="h1 mb-3">How can we help you?</h2>
+            <p class="lead fs-4 text-secondary mb-5">We hope you have found an answer to your question. If you need any help, please search your query on our Support Center or contact us via email.</p>
+            <div class="accordion accordion-flush" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    How Do I Add vaccines ?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>To change your billing information, please follow these steps:</p>
+                    <ul>
+                      <li>Go to our website and sign in to your account.</li>
+                      <li>Click on your profile picture in the top right corner of the page and select "Account Settings."</li>
+                      <li>Under the "Billing Information" section, click on "Edit."</li>
+                      <li>Make your changes and click on "Save."</li>
+                    </ul>
+                  </div>
                 </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How Does Payment System Work?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    A payment system is a way to transfer money from one person or organization to another. It is a complex process that involves many different parties, including banks, credit card companies, and merchants.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    How Do I Cancel My Booking?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>To cancel your account, please follow these steps:</p>
+                    <ul>
+                      <li>Go to our website and sign in to your account.</li>
+                      <li>Click on your profile picture in the top right corner of the page and select "Account Settings."</li>
+                      <li>Scroll to the bottom of the page and click on "Cancel Account."</li>
+                      <li>Enter your password and click on "Cancel Account."</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-        {% endfor %}
+          </div>
+        </div>
+      </div>
     </div>
-
-    
-
-  </section>
-
+  </div>
+</section>
 
 {% endblock %}

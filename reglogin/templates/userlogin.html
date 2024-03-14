@@ -2,19 +2,22 @@
 
 {%block content%}
 {%load crispy_forms_tags%}
-<form method='post' style="width: 50%; margin: auto" novalidate >
-    <h1 style="text-align: center;" >Login Form</h1>
-    {% csrf_token %}
-    <!-- {{form | crispy }} -->
-    {% for field in form %}
+<section class="regbackground">
+    <form method='post' style="width: 50%; margin: auto" class="p-5" novalidate >
+        <h1 style="text-align: center; color: #5a6f80;" >Login Form</h1>
+        {% csrf_token %}
+        <!-- {{form | crispy }} -->
+        <div class="mb-3" >
+            <label  for="username" class="form-label">Username</label>
+            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="text" class="form-control" id="username" name="username" placeholder="username">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="password" class="form-control" id="password" name="password" placeholder="********">
+        </div>
     
-        {{field.label_tag}}
-        {{field}}
-        {{field.errors | striptags}}
-  
-    {% endfor %}
-
-    <button class="btn btn-primary mt-2" type="submit">Login</button>
-
-</form>
+        <button class=" mt-2 submit "style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);color: #5a6f80;" type="submit">Login</button>
+    
+    </form>
+</section>
 {%endblock%}
