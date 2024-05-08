@@ -11,65 +11,76 @@
 
 <body class="regbackground">
     {% extends 'base.html' %}
-    
+
     {% block content %}
 
     {% if messages %}
-      {% for m in messages %}
-        <h1 {% if m.tags %} class="{{m.tags}} text-center" {% endif %}>{{m}}</h1>
-      {% endfor %}
+    {% for m in messages %}
+    <h1 {% if m.tags %} class="{{m.tags}} text-center" {% endif %}>{{m}}</h1>
+    {% endfor %}
     {% endif %}
-    <form method='post' style="width: 50%; margin: auto; padding: 10px; "novalidate>
+    <form method='post' style="width: 50%; margin: auto; padding: 10px; " novalidate>
         <h1 style="text-align: center;color: #5a6f80;">Registration Form</h1>
         {% csrf_token %}
 
-        <div class="mb-3" >
-            <label  for="username" class="form-label">Username</label>
-            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="text" class="form-control" id="username" name="username" placeholder="username">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="text" class="form-control"
+                id="username" name="username" placeholder="username">
         </div>
         <div class="mb-3">
             <label for="first_name" class="form-label">First Name</label>
-            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name">
+            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="text" class="form-control"
+                id="first_name" name="first_name" placeholder="First Name">
         </div>
         <div class="mb-3">
             <label for="last_name" class="form-label">Last Name</label>
-            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name">
+            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="text" class="form-control"
+                id="last_name" name="last_name" placeholder="Last Name">
         </div>
         <div class="mb-3">
             <label for="email" class="form-label">Email</label>
-            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="email" class="form-control" id="email" name="email" placeholder="email@yourdomain.com">
+            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="email"
+                class="form-control" id="email" name="email" placeholder="email@yourdomain.com">
         </div>
         <div class="mb-3">
             <label for="birth_date" class="form-label">Date Of Birth</label>
-            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="date" class="form-control" id="birth_date" name="birth_date" placeholder="Date Of Birth">
+            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="date" class="form-control"
+                id="birth_date" name="birth_date" placeholder="Date Of Birth">
         </div>
         <div class="mb-3">
             <label for="nid_no" class="form-label">Nid Number</label>
-            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="text" class="form-control" id="nid_no" name="nid_no" placeholder="Nid Number">
+            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="text" class="form-control"
+                id="nid_no" name="nid_no" placeholder="Nid Number">
         </div>
-        
+
         <div class="mb-3 ">
-          <label "for="userRole" class="form-label">Role</label>
-          {{ form.userRole }}
-      </div>
+            <label "for=" userRole" class="form-label">Role</label>
+            {{ form.userRole }}
+        </div>
         <div class="mb-3">
-          <label for="gender" class="form-label">Gender</label>
-           {{ form.gender }}
-      </div>
-      
-        
-      
+            <label for="gender" class="form-label">Gender</label>
+            {{ form.gender }}
+        </div>
+
+
+
         <div class="mb-3">
             <label for="password1" class="form-label">Password</label>
-            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="password" class="form-control" id="Confirm password" name="password1" placeholder="********">
+            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="password"
+                class="form-control" id="Confirm password" name="password1" placeholder="********">
         </div>
         <div class="mb-3">
             <label for="password2" class="form-label">Confirm password</label>
-            <input  style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="password" class="form-control" id="password2" name="password2" placeholder="********">
+            <input style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);" type="password"
+                class="form-control" id="password2" name="password2" placeholder="********">
         </div>
         <!-- Add more fields as needed -->
 
-        <button class=" mt-2 submit "style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);color: #5a6f80;" type="submit">Create Account</button>
+        <button class=" mt-2 submit "
+            style="border-radius: 10px; background: rgba(255, 255, 255, 0.486);color: #5a6f80;" type="submit">Create
+            Account</button>
+        <a  href="{% url 'login' %}">Already have an account</a>
     </form>
 
 
